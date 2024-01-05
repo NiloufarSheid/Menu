@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="html, css, javascript, form, dynamic form">
+    <meta name="description" content="form, dynamic form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Dynamic Form</title>
+</head>
+<body>
+<div class="container">
+    <button id="open-form-button">ثبت نام</button>
+    <div id="form-section" class="display-form">
+        <div id="from-header">
+            <span>فرم ثبت نام</span>
+            <span><input type="checkbox" id="dark-light-mode"> حالت تاریک</span>
+        </div>
+        <hr>
+        <form action="#">
+            <h4>نام</h4>
+            <input type="text" placeholder="Name" class="block-input">
+            <h4>ایمیل</h4>
+            <input type="email" placeholder="Email" class="block-input">
+            <h4>کلمه عبور</h4>
+            <input type="password" placeholder="Password" class="block-input">
+            <br>
+            <div class="gender">
+                <div><input type="radio" name="gender" id="single">  مجرد</div>
+                <div><input type="radio" name="gender" id="married">  متاهل</div>
+                <div class="isMarried">
+                    <h4>نام همسر</h4>
+                    <input type="text" placeholder="Spouse Name" class="block-input">
+                </div>
+            </div>
+            <br>
+            <div class="children">
+                <div><input type="checkbox" id="child">  دارای فرزند</div>
+                <br>
+                <div class="isChildren">
+                    <span>فرزندان</span>
+                    <span class="op" id="plus">+</span>
+                    <span class="op" id="minus">-</span>
+                </div>
+                <div id="children-inputes"></div>
+            </div>
+            <br>
+            <button id="register">ثبت نام</button>
+        </form>
+    </div>
+</div>
+
+<script src="tamrin.js"></script>
+</body>
+</html>
